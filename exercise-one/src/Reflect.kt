@@ -5,7 +5,6 @@ fun main(args: Array<String>) {
         println("Requires a class name as argument to program")
         System.exit(-1)
     }
-    args.forEach { Class.forName(it).kotlin.allSupertypes
-            .forEach { println(it) }
+    args.forEach { Class.forName(it).kotlin.allSupertypes.forEach { println(it) }
     }
 }
